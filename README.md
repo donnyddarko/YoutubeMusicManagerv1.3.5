@@ -1,19 +1,15 @@
-## Summary
-A rule-based, autonomous software agent for YouTube Music that automates the progressive selection and controlled deletion of uploaded tracks. Built as a Tampermonkey userscript, it applies deterministic decision-making principles inspired by symbolic AI, prioritizing user control, transparency, and safety.
-This project was developed as a practical demonstration of how elementary concepts associated with artificial intelligence, especially rule-based decision-making and autonomous agents, can be applied to solve a real-world problem.
-Unlike a conventional theoretical proposal, YouTube Music Manager is an existing, functional software application developed and refined through iterative testing.
-The agent supports bulk deletion not only from the Uploads section but also directly from compatible YouTube Music playlists, allowing users to manage specific collections without navigating back to their entire uploaded music library.
+# YoutubeMusicManagerv1.3.5
 
-## YoutubeMusicManagerv1.3.5
-A rule-based, autonomous software agent for YouTube Music that automates the progressive selection and controlled deletion of uploaded tracks. Built as a Tampermonkey userscript, it applies deterministic decision-making principles inspired by symbolic AI, prioritizing user control, transparency, and safety.
-YoutubeMusicManagerv1.3.5
+Building AI course project - University of Helsinki & Reaktor
 
-## Building AI course project - University of Helsinki & Reaktor
 Author: Donald Ndreu
 Version: 1.3.5
 Platform: YouTube Music
 Technology: JavaScript / Tampermonkey
-Approach: Deterministic rule-based software agent, inspired by symbolic AI
+
+## Summary
+
+A rule-based software agent for YouTube Music that automates progressive track selection and controlled bulk deletion from uploaded music libraries and playlists. Built with JavaScript and Tampermonkey, it uses deterministic rules inspired by symbolic AI.
 
 ## Background
 The problem: Do we really control our digital music collections?
