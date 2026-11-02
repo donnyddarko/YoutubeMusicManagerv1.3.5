@@ -1,21 +1,21 @@
-# YoutubeMusicManagerv1.3.5
+## YoutubeMusicManagerv1.3.5
 A rule-based, autonomous software agent for YouTube Music that automates the progressive selection and controlled deletion of uploaded tracks. Built as a Tampermonkey userscript, it applies deterministic decision-making principles inspired by symbolic AI, prioritizing user control, transparency, and safety.
 YoutubeMusicManagerv1.3.5
 
-# Building AI course project - University of Helsinki & Reaktor
+## Building AI course project - University of Helsinki & Reaktor
 Author: Donald Ndreu
 Version: 1.3.5
 Platform: YouTube Music
 Technology: JavaScript / Tampermonkey
 Approach: Deterministic rule-based software agent, inspired by symbolic AI
 
-# Summary
+## Summary
 A rule-based, autonomous software agent for YouTube Music that automates the progressive selection and controlled deletion of uploaded tracks. Built as a Tampermonkey userscript, it applies deterministic decision-making principles inspired by symbolic AI, prioritizing user control, transparency, and safety.
 This project was developed as a practical demonstration of how elementary concepts associated with artificial intelligence, especially rule-based decision-making and autonomous agents, can be applied to solve a real-world problem.
 Unlike a conventional theoretical proposal, YouTube Music Manager is an existing, functional software application developed and refined through iterative testing.
 The agent supports bulk deletion not only from the Uploads section but also directly from compatible YouTube Music playlists, allowing users to manage specific collections without navigating back to their entire uploaded music library.
 
-# Background
+## Background
 The problem: Do we really control our digital music collections?
 Imagine spending years purchasing music CDs, collecting albums, and building a personal music library.
 Now imagine discovering that the modern music industry increasingly expects you to access music through subscription-based streaming services, even when you already own physical copies of your favorite albums.
@@ -26,7 +26,7 @@ The platform supports large personal music collections, making it an attractive 
 However, there is a practical limitation.
 Managing thousands of individually uploaded tracks through the standard web interface can become repetitive, inconvenient, and extremely time-consuming.
 
-# Problems addressed
+## Problems addressed
 The project focuses on several recurring difficulties:
 - Managing large collections containing thousands of uploaded songs.
 - Selecting multiple tracks through repetitive interactions.
@@ -35,7 +35,7 @@ The project focuses on several recurring difficulties:
 - Maintaining control over potentially destructive operations.
 - Reducing the technical barriers associated with managing large personal music collections.
 
-# Personal motivation
+## Personal motivation
 The project originated from a genuine personal requirement.
 While organizing a music collection containing more than 200 tracks, I encountered limitations in the standard YouTube Music interface.
 Manually selecting and removing large numbers of uploaded songs was neither practical nor efficient.
@@ -43,16 +43,16 @@ Instead of accepting these limitations or investing in a completely different in
 The objective was not simply to make the process faster.
 It was to create a solution that remained transparent, accessible, predictable, and under the user's control.
 
-# Why this matters
+## Why this matters
 Technological progress should increase individual freedom rather than unnecessarily restrict it.
 Users should have meaningful control over their digital collections, regardless of whether those collections are stored locally or through a cloud-based service.
 YouTube Music Manager explores how relatively simple computational techniques can improve the usability of an existing platform without requiring expensive infrastructure or advanced technical knowledge from the end user.
 
-# How is it used?
+## How is it used?
 YouTube Music Manager operates directly inside the YouTube Music web interface through Tampermonkey, a browser extension capable of executing custom JavaScript userscripts.
 The application introduces a dedicated graphical control panel for managing uploaded music.
 
-# Requirements
+## Requirements
 - A compatible desktop web browser.
 - The Tampermonkey browser extension.
 - Access to YouTube Music.
@@ -60,7 +60,7 @@ The application introduces a dedicated graphical control panel for managing uplo
 - The YouTube Music Manager userscript.
 No dedicated server, external database, machine-learning model, or paid AI inference service is required.
 
-# Installation
+## Installation
 - Install Tampermonkey in a compatible browser.
 - Obtain the YouTube Music Manager JavaScript userscript.
 - Import the script into Tampermonkey.
@@ -71,7 +71,7 @@ No dedicated server, external database, machine-learning model, or paid AI infer
 
 Important: The script is designed for managing uploaded music through the browser interface. Its behavior depends on the current structure of YouTube Music and should be verified before performing bulk operations.
 
-# Graphical interface
+## Graphical interface
 The software includes a custom graphical user interface designed to remain accessible during library management.
 Its characteristics include:
 - A floating control panel.
@@ -89,7 +89,7 @@ The application starts with the Selector mode active.
 The inactive mode is visually distinguished from the active one, helping the user understand which operations are currently available.
 Switching between operating modes resets the relevant operational state to avoid unintentionally carrying actions from one mode into another.
 
-# Operating mode 1: Selector
+## Operating mode 1: Selector
 The Selector mode automates progressive track selection.
 The user manually identifies the starting point within the music library.
 
@@ -106,7 +106,7 @@ The process can be repeated in multiple sessions, allowing the user to manage a 
 The interface provides start and stop controls, with keyboard-assisted interaction available for the selection workflow.
 The purpose is to automate repetitive interactions while preserving the user's ability to determine where the operation begins and when it ends.
 
-# Operating mode 2: Deleter
+## Operating mode 2: Deleter
 The Deleter mode performs controlled bulk removal of uploaded music tracks.
 Unlike an uncontrolled deletion script, this mode requires the user to define the intended operation.
 The workflow consists of:
@@ -122,7 +122,7 @@ The workflow consists of:
 The application uses browser-interface interactions to perform the deletion operations.
 Additional checks help prevent the agent from continuing when the interface behaves unexpectedly.
 
-# Safety mechanisms
+## Safety mechanisms
 Bulk deletion is potentially destructive and must therefore be treated differently from ordinary selection.
 The application incorporates several safeguards:
 - Explicit user confirmation before deletion.
@@ -136,8 +136,8 @@ The application incorporates several safeguards:
 The project prioritizes predictable behavior over blindly completing an operation.
 Important: Deleted uploaded tracks may not be recoverable. Users should maintain independent backups of their original music files before executing bulk deletion operations.
 
-# Data sources and AI methods
-# Data sources
+## Data sources and AI methods
+## Data sources
 YouTube Music Manager does not rely on a conventional training dataset.
 Instead, it operates on information made available by the YouTube Music web interface during normal browser interaction.
 Its primary information source is the Document Object Model (DOM).
@@ -154,7 +154,7 @@ Relevant information includes:
 This information is interpreted through predefined rules to determine the next action.
 The application does not require external training data, a neural network, or a remote AI API.
 
-# AI approach: Deterministic rule-based agents
+## AI approach: Deterministic rule-based agents
 The architecture is inspired by principles associated with symbolic artificial intelligence and rule-based software agents.
 In traditional symbolic AI, behavior can be described through explicit representations, logical conditions, and predefined rules.
 For example:
@@ -170,7 +170,7 @@ For example:
 
 These simplified examples illustrate the decision-making principles of the application.
 
-# Agent architecture
+## Agent architecture
 Conceptually, the software operates through a repeated cycle:
 - Observe → Evaluate → Decide → Act → Verify
 - Observe: Inspect the relevant webpage elements and their current states.
@@ -182,7 +182,7 @@ Conceptually, the software operates through a repeated cycle:
 This architecture allows a sequence of actions to be performed without requiring continuous manual intervention.
 However, its autonomy remains restricted to the specific operations, conditions, and decisions implemented by its rules.
 
-# Is this actually artificial intelligence?
+## Is this actually artificial intelligence?
 This distinction deserves particular attention.
 Not every automated script qualifies as an artificial intelligence system simply because it performs tasks without human intervention.
 YouTube Music Manager does not contain a trained machine-learning model, a knowledge-based reasoning engine, or an adaptive learning mechanism.
@@ -193,7 +193,7 @@ Nevertheless, the current implementation can also be accurately classified as ru
 The project therefore explores elementary AI-inspired decision-making rather than claiming to implement advanced artificial intelligence.
 This distinction is intentional and reflects the importance of accurately communicating both the capabilities and the limitations of a technical solution.
 
-# Why not use machine learning?
+## Why not use machine learning?
 Machine learning would introduce additional complexity without necessarily solving the underlying problem more effectively.
 The target environment contains structured interface elements that can be inspected programmatically.
 The required decisions are relatively limited and can be expressed through explicit conditions.
@@ -208,7 +208,7 @@ For this application, a deterministic approach offers several advantages:
 - It is to choose an appropriate computational approach for the problem being solved.
 - 
 
-# Challenges
+## Challenges
 Despite its practical advantages, YouTube Music Manager has several limitations.
 1. Dependency on YouTube Music
 The application interacts with a third-party website.
@@ -233,7 +233,7 @@ The project is intended to support legitimate personal management of user-upload
 It does not aim to bypass subscription requirements, digital rights management systems, access restrictions, or copyright protections.
 Its purpose is to improve user control over permitted library-management operations.
 
-# What next?
+## What next?
 YouTube Music Manager v1.3.5 represents a functional implementation of the original concept.
 Several possible developments could improve its reliability, accessibility, and technical capabilities.
 Improved interface recognition
@@ -250,42 +250,42 @@ A more advanced implementation might explore techniques such as:
 Such improvements would need to be evaluated against their additional complexity and operational risks.
 
 
-# Enhanced operational reporting
+## Enhanced operational reporting
 Future versions could provide more detailed logs, execution summaries, and diagnostic information.
 These features would help users understand which actions were completed and why an operation stopped.
 
-# User documentation
+## User documentation
 Additional documentation could explain practical workflows for preparing, uploading, organizing, and maintaining personal music collections.
 The goal would be to make the overall solution more accessible to users with limited technical experience.
 
-# Broader applicability
+## Broader applicability
 The underlying principles could potentially be adapted to other web-based applications that require repetitive, structured interactions.
 Any such extension would require platform-specific development and appropriate safeguards.
 
-# Long-term vision
+## Long-term vision
 The long-term objective is not simply to create a larger automation script.
 It is to investigate how lightweight, transparent, user-controlled software agents can make existing digital platforms more accessible and manageable.
 Advanced AI is not always necessary to deliver meaningful improvements.
 Sometimes the most useful solution is the one that solves a clearly defined problem with the least unnecessary complexity.
 
-# Acknowledgments
+## Acknowledgments
 This project was developed as part of the learning journey associated with Elements of AI - Building AI, created by the University of Helsinki and Reaktor.
 The course provided the theoretical background and inspiration for exploring artificial intelligence concepts through practical problem-solving.
 
-# Technologies and resources
+## Technologies and resources
 - University of Helsinki & Reaktor: Educational framework provided by the Elements of AI and Building AI courses.
 - Tampermonkey: Browser userscript execution and management environment.
 - JavaScript: Primary programming language.
 - YouTube Music: The web platform whose uploaded-music management interface is used by the application.
 - OpenAI ChatGPT: AI-assisted support during iterative development, code refinement, debugging, and technical documentation.
 
-# Development approach
+## Development approach
 The project originated from a personally identified problem.
 Its objectives, operational requirements, interface behavior, safety conditions, and design decisions were defined and progressively refined through practical testing.
 AI-assisted development tools were used to support implementation and troubleshooting.
 The human developer retained responsibility for specifying the requirements, evaluating the results, validating the behavior, and determining the final implementation.
 
-# Copyright and project status
+## Copyright and project status
 
 Author: Donald Ndreu
 Project: YouTube Music Manager
